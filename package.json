@@ -5,7 +5,7 @@
   "main": "caps.js",
   "scripts": {
     "start": "node caps.js",
-    "test": "jest --watchAll --coverage"
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
