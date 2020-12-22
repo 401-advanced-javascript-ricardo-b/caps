@@ -1,4 +1,4 @@
-const eventEmitter = require('../events');
+const events = require('../events');
 
 
 describe('Event Logs', () => {
