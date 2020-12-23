@@ -1,8 +1,10 @@
 'use strict'
 
-const logEvent = require('./logEvent');
+const logEvent = require('../logEvent');
+const faker = require('faker'); 
 
-describe('Event logger', ()=>{
+
+describe('Caps event logger', ()=>{
 
   let consoleSpy;
 
@@ -11,15 +13,21 @@ describe('Event logger', ()=>{
     consoleSpy = jest.spyOn(console, 'log').mockImplementation();
   });
 
+  let payload = {
+    store: 'TBD',
+    storeID: 'Unique',
+    orderID: faker.random.uuid(),
+    customer: faker.name.findName(),
+    address: `${faker.address.city()}, ${faker.address.state()}`
+  };
+
   afterEach(() =>{
     // put the console back
     consoleSpy.mockRestore();
   });
 
   it('console logs pickup event', () => {
-    logEvent
+    logEvent(payload)
     expect(consoleSpy).toHaveBeenCalled();
   })
-
-  
 })
