@@ -33,10 +33,17 @@ describe('Driver', ()=>{
     }, 1000);
   });
 
-  it('console logs picked up log', () => {
+  it('console logs in-transit up log', () => {
     setTimeout(()=>{
       pickUp(payload)
       expect(consoleSpy).toHaveBeenCalled();
     }, 3000);
+  });
+
+  it('console logs delivered up log', () => {
+    setTimeout(()=>{
+      pickUp(payload)
+      expect(consoleSpy).toHaveBeenCalled();
+    }, 1000);
   });
 })

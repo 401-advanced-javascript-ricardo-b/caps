@@ -27,7 +27,17 @@ describe('Caps event logger', ()=>{
   });
 
   it('console logs pickup event', () => {
-    logEvent(payload)
+    logEvent('pickup', payload)
+    expect(consoleSpy).toHaveBeenCalled();
+  })
+
+  it('console logs in-transit event', () => {
+    logEvent('in-transit', payload)
+    expect(consoleSpy).toHaveBeenCalled();
+  })
+
+  it('console logs delivered event', () => {
+    logEvent('delivered', payload)
     expect(consoleSpy).toHaveBeenCalled();
   })
 })
