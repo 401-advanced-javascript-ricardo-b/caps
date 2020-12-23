@@ -1,23 +1,23 @@
 {
-  "name": "caps",
+  "name": "vendor",
   "version": "1.0.0",
   "description": "",
-  "main": "caps.js",
+  "main": "vendor.js",
   "scripts": {
-    "start": "node caps.js",
+    "start": "node vendor.js",
     "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/401-advanced-javascript-ricardo-b/caps.git"
+    "url": "git+https://github.com/401-advanced-javascript-ricardo-b/vendor.git"
   },
   "keywords": [],
   "author": "Ricardo Barcenas",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/401-advanced-javascript-ricardo-b/caps/issues"
+    "url": "https://github.com/401-advanced-javascript-ricardo-b/vendor/issues"
   },
-  "homepage": "https://github.com/401-advanced-javascript-ricardo-b/caps#readme",
+  "homepage": "https://github.com/401-advanced-javascript-ricardo-b/vendor#readme",
   "dependencies": {
     "dotenv": "^8.2.0",
     "faker": "^5.1.0",

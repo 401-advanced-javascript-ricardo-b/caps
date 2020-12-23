@@ -20,6 +20,8 @@
 #### How to initialize/run your application (where applicable)
 
 - `node caps.js`
+- `node driver.js`
+- `node vendor.js`
 
 #### How to use your library (where applicable)
 
