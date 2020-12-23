@@ -35,6 +35,8 @@ function thanks(payload){
   console.log(`VENDOR: Thank you for delivering ${payload.orderID}`) 
 }
 
+module.exports = thanks;
+
 //////////////testing
 
 // brainConnection.on('connection', (socket)=>{

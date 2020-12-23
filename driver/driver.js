@@ -25,7 +25,7 @@ function pickUp(payload){
   }, 3000) 
 }
 
-
+module.exports = pickUp;
 
 
 // brainConnection.on('connection', (socket)=>{
